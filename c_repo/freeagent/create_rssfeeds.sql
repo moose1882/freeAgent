@@ -1,0 +1,1 @@
+create table rssfeeds ( feedid INT(6)UNSIGNED AUTO_INCREMENT PRIMARY KEY,feedurl VARCHAR(30) NOT NULL,feedname VARCHAR(30) NOT NULL,feedvalid VARCHAR(30) NOT NULL,update_date TIMESTAMP);

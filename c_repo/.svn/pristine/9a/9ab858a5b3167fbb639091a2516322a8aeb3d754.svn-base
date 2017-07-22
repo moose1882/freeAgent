@@ -1,0 +1,21 @@
+<html>
+
+<head>
+<title>Search</title>
+<link rel="stylesheet" type="text/css" href="search.css">
+
+
+</head>
+
+<body bgcolor=#000000>
+<font color = white> <h2>Search Free Agent Sports...</h2></font> 
+
+<section class="webdesigntuts-workshop">
+	<form name="search" method="post" action="search-test2.php">
+		Seach for: <input type="text" name="find" placeholder="Who are you looking for.."/> 
+		<input type="submit" name="search" value="search" />
+	</form>
+</section>
+</body>
+
+</html>

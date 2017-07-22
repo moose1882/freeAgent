@@ -1,0 +1,124 @@
+dfs2017-01-03 19:00:01 - Setting up CONTENT INGEST
+2017-01-03 19:00:01 - Connected successfully to: datafeeds
+2017-01-03 19:00:01 - Connected successfully to: contentdb
+2017-01-03 19:00:01 - CONTENT INGEST setup completed 
+2017-01-03 19:00:01 - --------------------------------------------------------------
+2017-01-03 19:00:01 - Deleted -3202 rows of old content.
+2017-01-03 19:00:01 - Starting with 1613 total rows.
+2017-01-03 19:00:01 - ***Ingest Summary: 1 Records added from Provider: ESPN:Headline News
+2017-01-03 19:00:01 - ***Ingest Summary: 1 Records added from Provider: ESPN:NBA News
+2017-01-03 19:00:01 - ***Ingest Summary: 7 Records added from Provider: ESPN:MLB News
+2017-01-03 19:00:01 - ***Ingest Summary: 17 Records added from Provider: ESPN:Golf Headlines
+2017-01-03 19:00:01 - ***Ingest Summary: 10 Records added from Provider: ESPN:Tennis Headlines
+2017-01-03 19:00:01 - ***Ingest Summary: 19 Records added from Provider: ESPN:Boxing Headlines
+2017-01-03 19:00:01 - ***Ingest Summary: 1 Records added from Provider: ESPN:College Football Headlines
+2017-01-03 19:00:01 - ***Ingest Summary: 24 Records added from Provider: ESPN:College Sports Headlines
+2017-01-03 19:00:01 - ***Ingest Summary: 16 Records added from Provider: ESPN:Olympic Sports Headlines
+2017-01-03 19:00:01 - ***Ingest Summary: 5 Records added from Provider: ESPN:Horse Racing Headlines
+2017-01-03 19:00:01 - ***Ingest Summary: 5 Records added from Provider: SMH:Headline Sports
+2017-01-03 19:00:01 - Failed loading XML http://www.smh.com.au/rssheadlines/rugby-league/article/rss.xml 
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					2017-01-03 19:00:01 - Failed loading XML http://www.smh.com.au/rssheadlines/rugby-union/article/rss.xml 
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										2017-01-03 19:00:01 - ***Ingest Summary: 95 Records added from Provider: SMH:AFL
+2017-01-03 19:00:01 - ***Ingest Summary: 3 Records added from Provider: SMH:FOOTBALL
+2017-01-03 19:00:01 - ***Ingest Summary: 15 Records added from Provider: ESPN:Auto
+2017-01-03 19:00:01 - ***Ingest Summary: 10 Records added from Provider: DT:Daily Telegraph
+2017-01-03 19:00:01 - ***Ingest Summary: 100 Records added from Provider: World Sport:World Sport All
+2017-01-03 19:00:01 - ***Ingest Summary: 96 Records added from Provider: World Sport:Olympics
+2017-01-03 19:00:01 - ***Ingest Summary: 70 Records added from Provider: World Sport:NFL
+2017-01-03 19:00:01 - ***Ingest Summary: 87 Records added from Provider: World Sport:MLB
+2017-01-03 19:00:01 - ***Ingest Summary: 88 Records added from Provider: World Sport:NBA
+2017-01-03 19:00:01 - ***Ingest Summary: 99 Records added from Provider: World Sport:NHL
+2017-01-03 19:00:01 - ***Ingest Summary: 99 Records added from Provider: World Sport:NCAA Football
+2017-01-03 19:00:01 - ***Ingest Summary: 98 Records added from Provider: World Sport:NCAA Basketball
+2017-01-03 19:00:01 - ***Ingest Summary: 96 Records added from Provider: World Sport:Soccer
+2017-01-03 19:00:01 - ***Ingest Summary: 99 Records added from Provider: World Sport:Golf
+2017-01-03 19:00:01 - ***Ingest Summary: 98 Records added from Provider: World Sport:Tennis
+2017-01-03 19:00:01 - ***Ingest Summary: 10 Records added from Provider: FIFA:Latest News
+2017-01-03 19:00:01 - ***Ingest Summary: 39 Records added from Provider: FIFA:World Cup Russia 2018
+2017-01-03 19:00:01 - ***Ingest Summary: 51 Records added from Provider: FIFA:World Cup Qatar 2022
+2017-01-03 19:00:01 - ***Ingest Summary: 51 Records added from Provider: FIFA:Men Olympic Football Tournament
+2017-01-03 19:00:01 - ***Ingest Summary: 49 Records added from Provider: FIFA:Women's Olympic Football Tournament
+2017-01-03 19:00:01 - ***Ingest Summary: 1 Records added from Provider: BBC:Sports Front Page
+2017-01-03 19:00:01 - ***Ingest Summary: 1 Records added from Provider: BBC:Football
+2017-01-03 19:00:01 - ***Ingest Summary: 6 Records added from Provider: BBC:Cricket
+2017-01-03 19:00:01 - ***Ingest Summary: 6 Records added from Provider: BBC:Rugby Union
+2017-01-03 19:00:01 - ***Ingest Summary: 25 Records added from Provider: BBC:Rugby League
+2017-01-03 19:00:01 - ***Ingest Summary: 15 Records added from Provider: BBC:Tennis
+2017-01-03 19:00:01 - ***Ingest Summary: 21 Records added from Provider: BBC:Golf
+2017-01-03 19:00:01 - ***Ingest Summary: 29 Records added from Provider: BBC:Snooker
+2017-01-03 19:00:01 - ***Ingest Summary: 23 Records added from Provider: All Africa:Olympics
+2017-01-03 19:00:01 - ***Ingest Summary: 16 Records added from Provider: All Africa:Athletics
+2017-01-03 19:00:01 - ***Ingest Summary: 3 Records added from Provider: CNN:World Sport
+2017-01-03 19:00:01 - ***Ingest Summary: 13 Records added from Provider: CNN:Football
+2017-01-03 19:00:01 - ***Ingest Summary: 17 Records added from Provider: CNN:Golf
+2017-01-03 19:00:01 - ***Ingest Summary: 17 Records added from Provider: CNN:Motor Sport
+2017-01-03 19:00:01 - ***Ingest Summary: 35 Records added from Provider: CNN:Tennis
+2017-01-03 19:00:01 - ***Ingest Summary: 10 Records added from Provider: Score Pro - Live:Headlines
+2017-01-03 19:00:01 - ***Ingest Summary: 500 Records added from Provider: IBN:Headlines
+2017-01-03 19:00:01 - ***Ingest Summary: 26 Records added from Provider: India Today:Headlines
+2017-01-03 19:00:01 - Failed loading XML http://www.newkerala.com/sports-news.xml 
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															2017-01-03 19:00:01 - ***Ingest Summary: 237 Records added from Provider: ReDiff:Headlines
+2017-01-03 19:00:01 - ***Ingest Summary: 20 Records added from Provider: Times of India:Headlines
+2017-01-03 19:00:01 - ***Ingest Summary: 1 Records added from Provider: CBC:Headlines
+2017-01-03 19:00:01 - ***Ingest Summary: 13 Records added from Provider: CBC:MLB
+2017-01-03 19:00:01 - ***Ingest Summary: 9 Records added from Provider: CBC:NBA
+2017-01-03 19:00:01 - ***Ingest Summary: 13 Records added from Provider: CBC:Curling
+2017-01-03 19:00:01 - ***Ingest Summary: 14 Records added from Provider: CBC:CFL
+2017-01-03 19:00:01 - ***Ingest Summary: 9 Records added from Provider: CBC:NFL
+2017-01-03 19:00:01 - ***Ingest Summary: 11 Records added from Provider: CBC:Soccer
+2017-01-03 19:00:01 - ***Ingest Summary: 14 Records added from Provider: CBC:Figure Skating
+2017-01-03 19:00:01 - ***Ingest Summary: 20 Records added from Provider: Sports Pro Media:Latest News
+2017-01-03 19:00:01 - ***Ingest Summary: 20 Records added from Provider: Sports Pro Media:Movers and Shakers
+2017-01-03 19:00:01 - ***Ingest Summary: 20 Records added from Provider: Sports Pro Media:Baseball
+2017-01-03 19:00:01 - ***Ingest Summary: 17 Records added from Provider: Sports Pro Media:Basketball
+2017-01-03 19:00:01 - ***Ingest Summary: 20 Records added from Provider: Sports Pro Media:Football
+2017-01-03 19:00:01 - ***Ingest Summary: 18 Records added from Provider: Sports Pro Media:Ice Hockey
+2017-01-03 19:00:01 - ***Ingest Summary: 18 Records added from Provider: Sports Pro Media:Motor Sports
+2017-01-03 19:00:01 - ***Ingest Summary: 13 Records added from Provider: Sports Pro Media:Soccer
+2017-01-03 19:00:01 - ***Ingest Summary: 7 Records added from Provider: Australian Fencing:Fencing
+2017-01-03 19:00:01 - ***Ingest Summary: 65 Records added from Provider: Daily Mail UK:Top World Cup Stories
+2017-01-03 19:00:01 - ***Ingest Summary: 18 Records added from Provider: Daily Mail UK:Tennis - Wimbledon
+2017-01-03 19:00:01 - ***Ingest Summary: 18 Records added from Provider: Daily Mail UK:Football - AC Milan
+2017-01-03 19:00:01 - ***Ingest Summary: 10 Records added from Provider: BWF:Badminton
+2017-01-03 19:00:01 - ***Ingest Summary: 318 Records added from Provider: FFA:Foottball - Australian
+2017-01-03 19:00:01 - ***Ingest Summary: 9 Records added from Provider: Fox Sports:Golf
+2017-01-03 19:00:01 - ***Ingest Summary: 10 Records added from Provider: Fox Sports:Rugby Union
+2017-01-03 19:00:01 - ***Ingest Summary: 10 Records added from Provider: Fox Sports:Rugby Union - Worl Cup
+2017-01-03 19:00:01 - ***Ingest Summary: 6 Records added from Provider: Fox Sports:AFL
+2017-01-03 19:00:01 - ***Ingest Summary: 6 Records added from Provider: Fox Sports:Motor Sports
+2017-01-03 19:00:01 - ***Ingest Summary: 10 Records added from Provider: Fox Sports:Tennis
+2017-01-03 19:00:01 - ***Ingest Summary: 8 Records added from Provider: Fox Sports:Super Rugby
+2017-01-03 19:00:01 - ***Ingest Summary: 2 Records added from Provider: Google:Aus Sports News
+2017-01-03 19:00:01 - ***Ingest Summary: 1 Records added from Provider: Google:CAN (en) Sports News
+2017-01-03 19:00:01 - ***Ingest Summary: 3 Records added from Provider: Google:UK Sports News
+2017-01-03 19:00:01 - ***Ingest Summary: 3 Records added from Provider: Google:US Sports News
+Done. 3214 new rows added to db. 4827 rows in total. 
+--------------------------------------------------------------
+2017-01-03 19:02:03 - Setting up CONTENT INGEST
+2017-01-03 19:02:03 - Connected successfully to: datafeeds
+2017-01-03 19:02:03 - Connected successfully to: contentdb
+2017-01-03 19:02:03 - CONTENT INGEST setup completed 
+2017-01-03 19:02:03 - --------------------------------------------------------------
+2017-01-03 19:02:03 - Deleted -3202 rows of old content.
+2017-01-03 19:02:03 - Starting with 1625 total rows.
+2017-01-03 19:02:03 - ***Ingest Summary: 1 Records added from Provider: ESPN:Headline News
+2017-01-03 19:02:03 - ***Ingest Summary: 1 Records added from Provider: ESPN:NBA News
+2017-01-03 19:02:03 - ***Ingest Summary: 7 Records added from Provider: ESPN:MLB News
+2017-01-03 19:02:03 - ***Ingest Summary: 17 Records added from Provider: ESPN:Golf Headlines
+2017-01-03 19:02:03 - ***Ingest Summary: 10 Records added from Provider: ESPN:Tennis Headlines
+2017-01-03 19:02:03 - ***Ingest Summary: 19 Records added from Provider: ESPN:Boxing Headlines
+2017-01-03 19:02:03 - ***Ingest Summary: 1 Records added from Provider: ESPN:College Football Headlines
+2017-01-03 19:02:03 - ***Ingest Summary: 24 Records added from Provider: ESPN:College Sports Headlines
+2017-01-03 19:02:03 - ***Ingest Summary: 16 Records added from Provider: ESPN:Olympic Sports Headlines
+2017-01-03 19:02:03 - ***Ingest Summary: 5 Records added from Provider: ESPN:Horse Racing Headlines
+2017-01-03 19:02:03 - ***Ingest Summary: 5 Records added from Provider: SMH:Headline Sports
+2017-01-03 19:02:03 - Failed loading XML http://www.smh.com.au/rssheadlines/rugby-league/article/rss.xml 
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					2017-01-03 19:02:03 - Failed loading XML http://www.smh.com.au/rssheadlines/rugby-union/article/rss.xml 
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										2017-01-03 19:02:03 - ***Ingest Summary: 95 Records added from Provider: SMH:AFL
+2017-01-03 19:02:03 - ***Ingest Summary: 15 Records added from Provider: ESPN:Auto
+2017-01-03 19:02:03 - ***Ingest Summary: 10 Records added from Provider: DT:Daily Telegraph
+2017-01-03 19:02:03 - ***Ingest Summary: 100 Records added from Provider: World Sport:World Sport All
+2017-01-03 19:02:03 - ***Ingest Summary: 96 Records added from Provider: World Sport:Olympics
+2017-01-03 19:02:03 - ***Ingest Summary: 70 Records added from Provider: World Sport:NFL
+2017-01-03 19:02:03 - ***Ingest Summary: 87 Records added from Provider: World Sport:MLB
+2017-01-03 19:02:03 - ***Ingest Summary: 88 Records added from Provider: World Sport:NBA

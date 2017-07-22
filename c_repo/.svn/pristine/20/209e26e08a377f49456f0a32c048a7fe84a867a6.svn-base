@@ -1,0 +1,123 @@
+
+<?php
+//#!/usr/bin/php
+/*
+==================================================================
+Free Agent - Content Ingest
+==================================================================
+version 1.0 by D Furlotte, darrenfurlotte (the at sign) gmail (dot) com
+------------------------------------------------------------------
+	//start debug
+			ini_set('display_errors', 1);
+			ini_set('display_startup_errors', 1);
+			error_reporting(E_ALL);
+		//end debug
+//move this end comment above 'start debug' to enable display errors*/ 
+	
+// Change THESE variable only to match your environment
+$hostname = "localhost";
+$username = "root";
+$password = "0p3nW1nd0w5";
+$datafeedsdbname = "datafeeds";
+$contentdbname = "contentdb";
+$log_data = date('Y-m-d H:i:s');
+$countContent = 0;
+
+
+
+
+////////////////////////////////////////////////
+//DO NOT EDIT BELOW THIS NOTICE
+////////////////////////////////////////////////
+try 
+{
+/*  datafeedsdb connection. This selects a list of RSS urls.*/
+	echo "Setting up CONTENT INGEST\n";
+		$datafeeddb_conn = new mysqli($hostname, $username, $password, $datafeedsdbname);
+	if($datafeeddb_conn->connect_error) 
+		die('Connect Error (' . mysqli_connect_errno() . ') '. mysqli_connect_error());
+		echo "Connected successfully to: " .$datafeedsdbname ."\n";
+/*  contentdb connection. This allows read/write for the RSS content.*/
+		$contentdb_conn = new mysqli($hostname, $username, $password, $contentdbname);
+	if($contentdb_conn->connect_error) 
+		die('Connect Error (' . mysqli_connect_errno() . ') '. mysqli_connect_error());
+		echo "Connected successfully to: " .$contentdbname ."\n";
+	echo "CONTENT INGEST setup completed \n";
+
+// Opening the datafeeddb and selecting the rss urls
+
+		$rss_get_url = "SELECT feed_provider, feed_name, feed_address  FROM datafeeds.feed_urls;";
+		$rss_url = mysqli_query($datafeeddb_conn,$rss_get_url);
+		$rss_row_cnt = mysqli_num_rows($rss_url);
+			if($rss_row_cnt == false){
+			echo "No RSS URLs retrieved for this content provider.\n";
+			}
+//  First set to big outter loop that goes through each RSS XML document			
+foreach ($rss_url as $key => $feed_url) {
+	//  Now parse each rss feed to RSS_DOC 
+			echo "Starting with - '" . $feed_url['feed_address']."'\n";
+		$content_feed_provider = $feed_url['feed_provider'];
+				libxml_use_internal_errors(true);
+				$RSS_DOC = simpleXML_load_file($feed_url['feed_address']);
+			if (!$RSS_DOC) 
+			{
+				echo "Failed loading XML";
+				foreach(libxml_get_errors() as $error) 
+				{
+					echo "\t", $error->message;
+				}
+			}
+//start inner loop		
+		foreach($RSS_DOC->channel->item as $RSSitem)
+			{
+	//Loop through each item in the RSS XML document				
+		$content_id	= md5($RSSitem->title);
+		$fetch_date = date("Y-m-j G:i:s"); //NOTE: we don't use a DB SQL function so its database independant
+		$content_title = $RSSitem->title;
+			$content_title_clean = mysqli_real_escape_string($datafeeddb_conn,$content_title);
+			$content_title_clean = str_replace("&#039;","/'",$content_guid);
+		$content_description = $RSSitem->description;
+			$content_description_clean = mysqli_real_escape_string($datafeeddb_conn,$content_description);
+			//$content_description_clean = str_replace("&#039;","/'",$content_guid)
+		$content_date  = date("Y-m-j G:i:s", strtotime($RSSitem->pubDate));
+		$content_url	= $RSSitem->link;
+		$content_guid  = $RSSitem->guid ;
+			$content_guid_clean =  //str_replace("&#039;","/'",$content_guid)   ;           //substr("$content_guid", 0, 25);   // mysqli_real_escape_string($datafeeddb_conn,$content_guid);
+		echo $content_guid_clean ."\n";
+	
+		
+// Before we decide to store the data: Does record already exist? 
+		$content_exists_sql = "SELECT * FROM `contentdb`.`content_all` WHERE espn_content_id = '".$content_id."';" ;
+		$content_exists = mysqli_query($contentdb_conn,$content_exists_sql);
+		$content_row_cnt = mysqli_num_rows($content_exists);
+
+//Only insert if new item...		
+		if($content_row_cnt == 0){
+			echo "Inserting new item....\n";
+			$content_insert_sql = "INSERT INTO content_all (espn_content_id, title, description, link, pubDate,guid,feed_provider) VALUES ('$content_id','$content_title_clean','$content_description_clean','$content_url','$fetch_date','$content_guid','$content_feed_provider')";
+            $retval = mysqli_query($contentdb_conn,$content_insert_sql);
+				if(!$retval) {
+					die('!!ERROR!!Could not enter data: '.mysqli_error($contentdb_conn))."\n";  
+					echo "Entered data successfully\n";	}
+		}
+		else {
+			//echo "Not inserting existing item..\n";	
+			}	
+
+
+	} //end inner loop
+	//$log_data = $log_data." - We retrieved " .$countContent. " rows of content.";
+	echo "Finished with  - " . $feed_url['feed_address'] ."\n";
+} // end outter Loop
+			
+	
+}		//end try
+catch (Exception $e)	{echo 'Caught exception: ',  $e->getMessage(), "\n";	} 	
+		
+////////////////////////
+//End of script & clean up
+////////////////////////
+
+$datafeeddb_conn->close();
+$contentdb_conn->close();
+?>

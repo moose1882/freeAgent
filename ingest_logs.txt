@@ -1,0 +1,74 @@
+2016-08-12 11:13:10 - Setting up CONTENT INGEST
+2016-08-12 11:13:10 - Connected successfully to: datafeeds
+2016-08-12 11:13:10 - Connected successfully to: contentdb
+2016-08-12 11:13:10 - CONTENT INGEST setup completed 
+2016-08-12 11:13:10 - --------------------------------------------------------------
+2016-08-12 11:13:10 -  No records added from Provider: ESPN - Headline News
+2016-08-12 11:13:10 -  No records added from Provider: ESPN - NFL News
+2016-08-12 11:13:10 -  No records added from Provider: ESPN - NBA News
+2016-08-12 11:13:10 -  No records added from Provider: ESPN - MLB News
+2016-08-12 11:13:10 -  No records added from Provider: ESPN - NHL Headlines
+2016-08-12 11:13:10 -  No records added from Provider: ESPN - Golf Headlines
+2016-08-12 11:13:10 -  No records added from Provider: ESPN - Tennis Headlines
+2016-08-12 11:13:10 -  No records added from Provider: ESPN - Boxing Headlines
+2016-08-12 11:13:10 -  No records added from Provider: ESPN - College Basketball Headlines
+2016-08-12 11:13:10 -  No records added from Provider: ESPN - College Football Headlines
+2016-08-12 11:13:10 -  No records added from Provider: ESPN - College Sports Headlines
+2016-08-12 11:13:10 -  No records added from Provider: ESPN - Olympic Sports Headlines
+2016-08-12 11:13:10 -  No records added from Provider: ESPN - Horse Racing Headlines
+2016-08-12 11:13:10 -  No records added from Provider: SMH - Headline Sports
+2016-08-12 11:13:10 -  No records added from Provider: SMH - Rugby Leauge
+2016-08-12 11:13:10 -  No records added from Provider: SMH - RUGBY UNION
+2016-08-12 11:13:10 -  No records added from Provider: SMH - AFL
+2016-08-12 11:13:10 - Inserting 1 items from SMH - FOOTBALL.
+2016-08-12 11:13:10 - Inserting 2 items from SMH - FOOTBALL.
+2016-08-12 11:13:10 - 2 Records added from Provider: SMH - FOOTBALL
+2016-08-12 11:13:10 -  No records added from Provider: SMH - Cricket
+2016-08-12 11:13:10 -  No records added from Provider: ESPN - Auto
+2016-08-12 11:13:10 -  No records added from Provider: DT - Daily Telegraph
+2016-08-12 11:13:10 - Inserting 1 items from CBS - CBS Sports Headlines.
+2016-08-12 11:13:10 -  No records added from Provider: CBS - CBS Sports Headlines
+2016-08-12 11:13:10 -  No records added from Provider: SBS - SBS World-APAC Headlines
+2016-08-12 11:13:10 -  No records added from Provider: World Sport - World Sport All
+2016-08-12 11:13:10 -  No records added from Provider: World Sport - Olympics
+2016-08-12 11:13:10 -  No records added from Provider: World Sport - NFL
+2016-08-12 11:13:10 -  No records added from Provider: World Sport - MLB
+2016-08-12 11:13:10 -  No records added from Provider: World Sport - NBA
+2016-08-12 11:13:10 -  No records added from Provider: World Sport - NHL
+2016-08-12 11:13:10 -  No records added from Provider: World Sport - NCAA Football
+2016-08-12 11:13:10 -  No records added from Provider: World Sport - NCAA Basketball
+2016-08-12 11:13:10 -  No records added from Provider: World Sport - Soccer
+2016-08-12 11:13:10 -  No records added from Provider: World Sport - Golf
+2016-08-12 11:13:10 -  No records added from Provider: World Sport - Tennis
+2016-08-12 11:13:10 -  No records added from Provider: FIFA - Latest News
+2016-08-12 11:13:10 -  No records added from Provider: FIFA - World Cup Russia 2018
+2016-08-12 11:13:10 -  No records added from Provider: FIFA - World Cup Qatar 2022
+2016-08-12 11:13:10 -  No records added from Provider: FIFA - Men Olympic Football Tournament
+2016-08-12 11:13:10 -  No records added from Provider: FIFA - Women's Olympic Football Tournament
+2016-08-12 11:13:10 -  No records added from Provider: TalkSport - Headlines
+2016-08-12 11:13:10 -  No records added from Provider: TalkSport - Football
+2016-08-12 11:13:10 -  No records added from Provider: TalkSport - Football - Premier League
+2016-08-12 11:13:10 -  No records added from Provider: TalkSport - Football - Transfer Rumours
+2016-08-12 11:13:10 -  No records added from Provider: TalkSport - Rugby Union
+2016-08-12 11:13:10 -  No records added from Provider: TalkSport - Cricket
+2016-08-12 11:13:10 -  No records added from Provider: TalkSport - F1
+2016-08-12 11:13:10 -  No records added from Provider: TalkSport - Boxing
+2016-08-12 11:13:10 -  No records added from Provider: TalkSport - Athletics
+2016-08-12 11:13:10 -  No records added from Provider: TalkSport - Cycling
+2016-08-12 11:13:10 -  No records added from Provider: TalkSport - Darts
+2016-08-12 11:13:10 -  No records added from Provider: TalkSport - Golf
+2016-08-12 11:13:10 -  No records added from Provider: TalkSport - Racing
+2016-08-12 11:13:10 -  No records added from Provider: TalkSport - Rugby League
+2016-08-12 11:13:10 -  No records added from Provider: TalkSport - Snooker
+2016-08-12 11:13:10 -  No records added from Provider: TalkSport - Tennis
+2016-08-12 11:13:10 - Inserting 1 items from BBC - Sports Front Page.
+2016-08-12 11:13:10 -  No records added from Provider: BBC - Sports Front Page
+2016-08-12 11:13:10 -  No records added from Provider: BBC - Football
+2016-08-12 11:13:10 -  No records added from Provider: BBC - Cricket
+2016-08-12 11:13:10 -  No records added from Provider: BBC - Rugby Union
+2016-08-12 11:13:10 -  No records added from Provider: BBC - Rugby League
+2016-08-12 11:13:10 -  No records added from Provider: BBC - Tennis
+2016-08-12 11:13:10 -  No records added from Provider: BBC - Golf
+2016-08-12 11:13:10 -  No records added from Provider: BBC - Snooker
+Done.
+--------------------------------------------------------------

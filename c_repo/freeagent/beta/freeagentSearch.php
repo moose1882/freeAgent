@@ -1,0 +1,100 @@
+<html>
+            <head><title>Searching for an Athelete...</title>
+            </head>
+            <body bgcolor=#ffffff>
+    
+	
+<?php
+/*	//start debug//move this end comment above 'start debug' to enable display errors*/ 
+			ini_set('display_errors', 1);
+			ini_set('display_startup_errors', 1);
+			error_reporting(E_ALL);
+	//end debug
+
+		
+// Change THESE variable only to match your environment
+$hostname = "localhost";
+$username = "root";
+$password = "0p3nW1nd0w5";
+$datafeedsdbname = "datafeeds";
+$contentdbname = "contentdb";
+
+////////////////////////////////////////////////
+//DO NOT EDIT BELOW THIS NOTICE
+////////////////////////////////////////////////
+
+        echo "<h2>Search Results:</h2><p>";
+
+if(isset($_POST['search']))
+    {
+		//$find_provider =$_POST['qsearchProvider'];
+		//echo "Find Provider".$find_provider;
+        $find =$_POST['find'];
+		echo "find: ".$find;
+            //If they did not enter a search term we give them an error
+            if ($find == "")
+            {
+            echo "<p>You forgot to enter a search term!!!";
+            exit;
+            }
+
+        // Otherwise we connect to our Database
+		/*  contentdb connection. This allows read/write for the RSS content.*/
+	
+		$contentdb_conn = new mysqli($hostname, $username, $password, $contentdbname);
+			if($contentdb_conn->connect_error) 
+				die('Connect Error (' . mysqli_connect_errno() . ') '. mysqli_connect_error());
+				echo "<font color = purple><B>Connected successfully to: " .$contentdbname."</font></B><br/>" ;
+			echo "content database connection setup completed</br>";
+			echo "---------------------</br>";
+			
+
+
+        // We perform a bit of filtering
+        $find = strtoupper($find);
+        $find = strip_tags($find);
+        $find = trim ($find);
+
+        //Now we search for our search term, in the field the user specified
+        $iname = mysqli_query($contentdb_conn, "SELECT * FROM contentdb.content_all where item_description like '%$find%'")
+			or die(mysqli_error($iname));
+
+        //And we display the search count and search term
+        //This counts the number or results - and if there wasn't any it gives them a little message explaining that
+        $anymatches = mysqli_num_rows( $iname);
+			if ($anymatches == 0)
+			{
+				echo "<font color = red>Sorry, but we can not find an entry to match your query...</font><br><br>";
+				}
+			else
+			{
+				echo "<font color = blue>Search Returned " .$anymatches.".</br>";
+				}
+				echo "<b>Searched For:</b> " .$find."</br>";
+				echo "---------------------</br></font>";
+            
+			// Now disply the results
+			while($result = mysqli_fetch_array(  $iname ))
+			{
+				echo "Feed Provider : <b>" .$result['feed_provider']."</b>";
+					echo "<br> "; 
+				echo "Image: ".$result['image_link'];
+					echo "<br> "; 
+				echo "Published Date : " .$result['item_pubDate'];
+					echo "<br> ";
+				echo "Title : " .$result['item_title'];
+					echo "<br> ";
+				echo "Description : ".$result['item_description'];
+					echo "<br>";
+				//echo "Link: " .$result['link'];
+				//	echo "<br>";
+				echo "Click link to go to the article: <a href='".$result['item_link']. "'> Link </a>"; 
+				echo "<br>";
+				echo "<br>";
+				}
+    }
+?> 
+
+
+            </body>
+            </html>
